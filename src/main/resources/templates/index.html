@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>RetroRevive | About</title>
+    <style>
+    /* Main CSS */
+        * {
+            font-family: 'Courier New', monospace;
+            color: white;
+        }
+        body {
+            font-size: 1em;
+            background: url("https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/601f787191201e001d22e85d.jpg") center fixed;
+            background-size: 100% 100%;
+            margin: 0px;
+        }
+        nav {
+            height: 100%;
+            width: 100%;
+        }
+        nav .left {
+            display: flex;
+            position: absolute;
+            left: 2%;
+            justify-content: space-around;
+            width: 15%;
+            align-items: center;
+            height: 50px;
+
+        }
+        nav .right {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-radius: 0px;
+            background: rgba(0,0,0,.6);
+            padding: 15px 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .navigation {
+            list-style: none;
+        }
+        .navigation li {
+            display: inline-block;
+            margin: 0px 5px;
+        }
+        .navigation li a {
+            padding: 20px 30px;
+            text-transform: capitalize;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            transition: 0.4s;
+
+        }
+
+        .navigation li a:hover {
+            letter-spacing: 2px;
+        }
+
+        nav img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 2%;
+        }
+
+        .main-content {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 60%;
+            height: auto;
+            overflow-x: hidden;
+            max-height: 75%;
+
+        }
+
+        section {
+            background: rgba(0,0,0,.6);
+            height: 50vh;
+            border-radius: 2vh;
+            display: flex;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            justify-content: center;
+
+            padding: 2%;
+        }
+
+        .left-side, .right-side {
+            width: 50%;
+            height: 90%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 2.5%;
+            display: block;
+        }
+
+        .left-side p, .footer p{
+            font-size: 10px;
+        }
+
+
+        *::-webkit-scrollbar {
+            width: 3px;
+            background-color: #F5F5F5;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: gray;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <span class="left">
+            <img src="https://i.pinimg.com/236x/c5/27/b8/c527b872d426738f62e4e1bac47be896--xbox-controller-gamer-svg.jpg">
+            <h1>
+                RR Gaming
+            </h1>
+        </span>
+        <span class="right">
+            <ul class="navigation">
+                 <li><a href="career">Careers</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li><a href="review">Reviews</a></li>
+            </ul>
+        </span>
+    </nav>
+</header>
+<div class="main-content">
+    <section>
+        <span class="left-side">
+            <h1>
+                <img src="https://th.bing.com/th/id/OIP.qn5EOUamSCB-7R2yNswz7AHaEK?pid=ImgDet&rs=1" width="auto" height="200px">
+                 <p>
+                    https://geeksleeprinserepeat.com/2018/03/15/video-game-nostalgia/
+                </p>
+                <img src="https://image.freepik.com/vetores-gratis/modelo-de-poster-de-jogos-retro_52683-50969.jpg" width="auto" height="200px">
+                 <p>
+                     https://www.freepik.com/free-vector/retro-gaming-poster-template_11187233.htm
+                 </p>
+            </h1>
+        </span>
+        <span class="right-side">
+            <p>
+                RetroRevive Gaming is a passionate and innovative company that transports gamers
+                back in time to relive the golden age of video gaming. We specialize in providing a
+                collection of classic retro games and gaming accessories, providing experiences
+                to both nostalgic gamers and newcomers ready to experience retro games.
+                In addition to games and accessories, we offer a wide variety of retro gaming
+                collectibles and other things.
+                <br><br>
+                To fuel your retro gaming experience, we provide a
+                wide range of gaming accessories. From vintage controllers to consoles, we've got the tools
+                to make your gaming setup feel like it's straight out of the '80s or '90s.
+                <br><br>
+                We host gaming events and competitions, where gamers can gather to show off their
+                skills, brag, and bask in the feeling of an era long gone. The winner wins nothing but
+                a 3D printed sheet of armor along with the significant right to boast. Second best gets
+                nothing. The loser however, gains the privilege of being forced to obey the winner for 24 hours
+                (all inclusive).
+            </p>
+        </span>
+    </section>
+</div>
+<span class="footer">
+    <p>
+        https://www.socialsuplex.com/8-bit-special-edition-top-25-n64-games-part-1-w-layne-farmen/
+    </p>
+</span>
+</body>
+</html>

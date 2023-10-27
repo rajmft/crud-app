@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RetroRevive | reviews</title>
+    <link rel="stylesheet" href="/review.css" type="text/css"></link>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <span class="left">
+            <img src="https://i.pinimg.com/236x/c5/27/b8/c527b872d426738f62e4e1bac47be896--xbox-controller-gamer-svg.jpg">
+            <h1>
+                RR Gaming
+            </h1>
+        </span>
+        <span class="right">
+            <ul class="navigation">
+                <li><a href="career">Careers</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li><a href="review">Reviews</a></li>
+            </ul>
+        </span>
+    </nav>
+</header>
+<button class="create-review" onclick="openForm()">Add Review</button>
+<div class="form-popup" id="myForm">
+    <form class="form-container" action="/create" method="POST">
+        <input type="text" placeholder="Name: " name="name" required>
+        <input type="text" placeholder="Rating (/5) " name="rating" required>
+        <input type="text" placeholder="Description: " name="info">
+
+        <button type="submit" class="btn">Submit Changes</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+</div>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Desc</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="review : ${reviewList}">
+        <td> <a th:href="@{/review/id={id}(id=${review.id})}" th:text=" ${review.id}" > </a></td>
+        <td th:text=" ${review.name}"></td>
+        <td th:text=" ${review.rating}"></td>
+        <td th:text=" ${review.info}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

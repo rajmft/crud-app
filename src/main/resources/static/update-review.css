@@ -1,0 +1,228 @@
+* {
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+body {
+    font-size: 1em;
+    background: url("https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/601f787191201e001d22e85d.jpg") center fixed;
+    background-size: 100% 100%;
+    margin: 0px;
+}
+nav {
+    height: 100%;
+    width: 100%;
+}
+nav .left {
+    display: flex;
+    position: absolute;
+    left: 2%;
+    justify-content: space-around;
+    width: 15%;
+    align-items: center;
+    height: 50px;
+
+}
+nav .right {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 0px;
+    background: rgba(0,0,0,.6);
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation {
+    list-style: none;
+}
+.navigation li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.navigation li a {
+    padding: 20px 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+
+}
+
+.navigation li a:hover {
+    letter-spacing: 2px;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.main-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: auto;
+    overflow-x: hidden;
+    max-height: 75%;
+
+}
+
+section {
+    background: rgba(0,0,0,.6);
+    height: 50vh;
+    border-radius: 2vh;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    justify-content: center;
+
+    padding: 2%;
+}
+
+.left-side, .right-side {
+    width: 50%;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2.5%;
+    display: block;
+}
+
+.left-side p, .footer p{
+    font-size: 10px;
+}
+
+
+*::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.footer {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* Review Form */
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 9;
+    border-radius: 10%;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #2E2E2E;
+    border-radius: 10%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(0,0,0,.5);
+    border-radius: 10%;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #0084FF;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+button.create-review {
+    position: absolute;
+    top:25%!important;
+    left: 25%;
+
+    height: 5vh;
+    width: 10vw;
+
+    background: rgba(0,0,0,0.4);
+    border-radius: 25vh;
+
+    border: none;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+table {
+
+    position: fixed;
+    top: 50%;
+    left: 25%;
+
+    background: rgba(0,0,0,0.4);
+
+    border-radius: 2vh;
+}
+
+th, td {
+    padding: 5vh;
+}
+
+
+.delete-review{
+    position: absolute;
+    top:25%!important;
+    left: 38%;
+
+    height: 5vh;
+    width: 10vw;
+
+    background: rgba(0,0,0,0.4);
+    border-radius: 25vh;
+
+    border: none;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
